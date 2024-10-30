@@ -1,0 +1,113 @@
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffb6c1; /* Light pink background */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  color: #ff69b4; /* Hot pink color for headings */
+}
+
+/* Main heading and subheading styling */
+h1 {
+  font-size: 2.5em;
+  color: #ff69b4;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 10px;
+  color: #ff69b4;
+}
+h3 {
+  font-size: 2em;
+  margin-top: 10px;
+  color: black;
+}
+/* Love Message paragraph */
+.love-message {
+  font-size: 1.2em;
+  margin: 20px;
+  line-height: 1.6;
+  color:black;
+}
+
+/* Button styling */
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+/* Yes and No button colors */
+#yesButton {
+  background-color: #ff69b4; /* Hot pink */
+  color: white;
+}
+
+#noButton {
+  background-color: #f08080; /* Light coral */
+  color: white;
+  position: relative;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  transform: scale(1.1);
+}
+
+/* GIF styling on the love.html page */
+.love-gif {
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+  animation: bounce 2s ease infinite;
+}
+
+/* Floating animation for the home page GIF */
+.cute-gif {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Keyframes for floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Keyframes for bouncing GIF animation on love page */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
